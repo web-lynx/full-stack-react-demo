@@ -1,3 +1,156 @@
-.App {
+* {
+    font-family: sans-serif;
+}
+
+#root {
+    background-color: snow;
+    margin: auto;
+}
+
+/* .home {
+    width: 100vw;
+    align-content: center;
+} */
+
+.navbar {
+    display: flex;
+    flex-basis: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 2em;
+    border: 1px grey solid;
+    width: 100%;
+    padding-left: 1rem;
+    column-gap: 1rem;
+    position: fixed;
+    top: 0;
+}
+
+.navbar h1 {
+    font-family: cursive;
+    align-self: left;
+    font-size: 1.5em;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline;
+    padding: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+#search-box {
+    padding: 0;
+    height: 1rem;
+    background-color: rgb(236, 236, 236);
+}
+
+#content {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    column-gap: 2rem;
+    margin-top: 5rem;
+}
+
+#left-side {
+}
+
+#right-side {
+    align-self: top;
+}
+
+#suggestions ul li {
+    list-style: none;
+}
+
+#stories-page {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 1rem;
+    background-color: white;
+    justify-content: space-around;
+    border: 1px grey solid;
+    width: 50vw;
+    margin-bottom: 2em;
+    padding-top: 1em;
+}
+
+.stories-container {
     text-align: center;
+}
+
+#stories-page p {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.stories-image {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 3px;
+    border: medium solid pink;
+}
+
+#photo-page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 2em;
+    width: 50vw;
+}
+
+.photo-container {
+    background-color: white;
+    border: 1px grey solid;
+    max-width: 80vw;
+}
+
+.photo-container-image {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+}
+
+.photo-user {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.photo-user img {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.photo-avatar {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 3px;
+    border: medium solid pink;
+}
+
+.photo-buttons ul {
+}
+
+.photo-buttons ul li {
+    list-style: none;
+    display: inline;
+    padding: 1em;
 }
