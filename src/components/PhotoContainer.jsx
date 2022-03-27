@@ -4,7 +4,11 @@ export const PhotoContainer = ({ photo }) => {
     return (
         <div className="photo-container">
             <p className="photo-user">
-                <img src={photo.download_url} className="photo-avatar" />
+                <img
+                    src={photo.download_url}
+                    className="photo-avatar"
+                    alt={`user image for ${photo.author}`}
+                />
                 {photo.author}
             </p>
             <img

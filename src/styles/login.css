@@ -1,0 +1,15 @@
+#login-page {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+#login-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-container button {
+    flex-grow: 0;
+}

@@ -1,4 +1,4 @@
-import "./App.css";
+import "./styles/global.css";
 import { useState } from "react";
 import { Login } from "./pages/Login.jsx";
 import { Home } from "./pages/Home.jsx";
@@ -20,7 +20,7 @@ function App() {
                     element={<Home user={user} setUser={setUser} />}
                 />
                 <Route
-                    path="/user"
+                    path="/settings"
                     element={<UserSettings user={user} setUser={setUser} />}
                 />
             </Routes>

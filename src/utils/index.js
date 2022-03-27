@@ -1,6 +1,5 @@
 export const createUser = async (username, email, password, setUser) => {
     try {
-        console.log("Got to createUser");
         const response = await fetch(`${process.env.REACT_APP_REST_API}user`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -53,12 +52,8 @@ export const tokenLogin = async (setter) => {
 };
 
 export const logout = () => {
-    try {
-        localStorage.clear();
-        window.location.reload(false);
-    } catch (error) {
-        console.log(error);
-    }
+    localStorage.clear();
+    window.location.reload(false);
 };
 
 export const deleteUser = async (user) => {
@@ -73,8 +68,6 @@ export const deleteUser = async (user) => {
                 },
             }
         );
-        const data = await response.json();
-        console.log(data);
         localStorage.clear();
         window.location.reload(false);
     } catch (error) {
@@ -82,7 +75,7 @@ export const deleteUser = async (user) => {
     }
 };
 
-export const updatePass = async (user, passUpdate) => {
+export const updatePass = async (user, newPass) => {
     try {
         const response = await fetch(`${process.env.REACT_APP_REST_API}user`, {
             method: "PATCH",
@@ -92,7 +85,7 @@ export const updatePass = async (user, passUpdate) => {
             },
             body: JSON.stringify({
                 username: user,
-                pass: passUpdate,
+                newpassword: newPass,
             }),
         });
         const data = await response.json();

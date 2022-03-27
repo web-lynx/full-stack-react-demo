@@ -40,35 +40,35 @@ export const Home = ({ user }) => {
                 <div id="right-side">
                     <div id="profile-info">
                         <img src="#" alt="your profile picture" />
-                        <p>username</p>
-                        <p>your full name</p>
+                        <p>{user}</p>
+                        <p>Your Full Name Here</p>
                         <a href="#">Switch</a>
                     </div>
                     <div id="suggestions">
                         <div className="suggestions-profile">
                             <p></p>
                             <p></p>
-                            <a href=""></a>
+                            <a href="#"></a>
                         </div>
                         <div className="suggestions-profile">
                             <p></p>
                             <p></p>
-                            <a href=""></a>
+                            <a href="#"></a>
                         </div>
                         <div className="suggestions-profile">
                             <p></p>
                             <p></p>
-                            <a href=""></a>
+                            <a href="#"></a>
                         </div>
                         <div className="suggestions-profile">
                             <p></p>
                             <p></p>
-                            <a href=""></a>
+                            <a href="#"></a>
                         </div>
                         <div className="suggestions-profile">
                             <p></p>
                             <p></p>
-                            <a href=""></a>
+                            <a href="#"></a>
                         </div>
                     </div>
                     <ul>

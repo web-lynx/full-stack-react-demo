@@ -7,7 +7,7 @@ export const Navbar = () => {
             <h1>Fauxstagram</h1>
             <input type="text" id="search-box" placeholder="Search" />
             <ul>
-                <NavLink to="/home"></NavLink>
+                <NavLink to="/home">Home</NavLink>
                 <li>
                     <a href="#">DMs</a>
                 </li>
@@ -18,10 +18,10 @@ export const Navbar = () => {
                     <a href="#">Likes</a>
                 </li>
                 <li>
-                    <NavLink to="settings"></NavLink>
+                    <NavLink to="/settings">Settings</NavLink>
                 </li>
             </ul>
-            <button onClick={() => logout}>Log Out</button>
+            <button onClick={logout}>Log Out</button>
         </div>
     );
 };
